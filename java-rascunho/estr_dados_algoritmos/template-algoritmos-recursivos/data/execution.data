@@ -1,0 +1,11 @@
+Algoritmo TamanhoEntrada TempoMedio
+iterativa 1000 1342
+recursiva 1000 2063
+iterativa 10000 1695
+recursiva 10000 2820
+iterativa 100000 2047
+recursiva 100000 622
+iterativa 1000000 2685
+recursiva 1000000 720
+iterativa 10000000 2940
+recursiva 10000000 840

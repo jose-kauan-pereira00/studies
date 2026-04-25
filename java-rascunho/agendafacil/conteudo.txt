@@ -1,0 +1,25 @@
+Métodos que podem ser utilizados nos testes e como utiliza- los:
+  -assertEquals(Esperado, atual):Basicamente, voce passa como parametro uma coisa que voce epera que saia e ele vai comparar com o que saiu.
+  -assertTrue(Você passa como parametro uma espressão booleana, se a espressão for verdadeira, então passou no teste)
+  -assertFalse(mesma coisa, porém nesse caso, tem que ser falsa)
+  -assertThrow(IllegalArgumentExeption,() ->{Expressão que deve lançar uma irregularidade de acordo com o argumento expecificado})
+
+Comparable e Comparator:
+ primeiro voce deve implementar o comparable(interface) na classe que voce deseja comparar:
+ ex:
+  public class Usuario implements Comparable<Usuario>
+
+em seguida voce deve sobreescrever o método comaparaTo(Usuario outro):
+  @Override
+  public int comaparaTo(Usuario ouro){
+    return Integer.compare(outro.get(atributo que voce deseja comparar), this.get());
+    //se voce colocar o this primeiro ele vai ficar em ordem "Crescente" se o outro objetos vinher em seguida
+    se for:
+    return Integer.comapre(this.get(), outro.get())//os objetos na lista ficam em ordem decrescente.
+  }
+ja quando for implementar:
+  Lis<Usuario> lista = ...
+  Collections.sort(lista, (u1, u2) -> Integer.compare(u2.get(), u1.get()))//como o u2 vem primeiro, ordem decrescente.
+  //usar uma expressão lambda para definir manualmente, () -> 
+
+

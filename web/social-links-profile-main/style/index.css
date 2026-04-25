@@ -1,0 +1,78 @@
+body {
+    background-color: #141414;
+    margin: 0;
+    display: flex;
+    position: relative; 
+    justify-content: center;
+    align-items: center;     
+    min-height: 100vh;      
+}
+
+ul{
+    padding: 0;
+    color: white;
+    list-style-type: none;
+}
+h3, p, h1{
+    color: white;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color: white;
+}
+
+.attribution a {
+    color: white; 
+}
+
+.card {
+    background-color: #1f1f1f;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 380px; 
+    width: 90%;
+    text-align: center;
+}
+.card img{
+    width: 88px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+
+.card a {
+    display: block;          
+    background-color: #333333;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+
+.card ul li a {
+    display: block;          
+    background-color: #333333;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.card ul li a:hover {
+    background-color: #c5f82a; 
+    color: #141414;
+}
+footer {
+    position: absolute; 
+    bottom: 10px;       
+    width: 100%;       
+    text-align: center;
+}

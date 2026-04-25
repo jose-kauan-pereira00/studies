@@ -1,0 +1,3 @@
+x = [1000, 10000, 100000, 1000000, 10000000]
+for i in x:
+    print(' '.join(map(str, list(range(i)))))
