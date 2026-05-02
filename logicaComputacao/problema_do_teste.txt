@@ -1,0 +1,26 @@
+"""
+Exercício: Dadas as proposições a, b e c, traduza cada sentença para uma fórmula da lógica
+proposicional clássica
+
+a: Amadeu passou no teste
+b: Bruno passou no teste
+c: Carlito passou no teste
+
+1. Carlito é o único a passar no teste
+2. Amadeu foi o único que não passou
+3. Apenas um, dentre Amadeu, Bruno e Carlo, passou no teste
+4. Pelo menos um deles passou
+5. No máximo dois deles passaram
+6. Exatamente dois deles passaram 
+"""
+
+#Na Linguagem de Logica
+"
+1 - C & ~B & ~C
+2 - ~A & B & C 
+3 - (A & ~B & ~C) v (~A & B & ~C) v (~A & ~B & C)
+4 - A v B v C
+5 - ~(A & B & C)
+6 - (A & B & ~C) v (A & ~B & C) v (~A & B & C)
+"
+
