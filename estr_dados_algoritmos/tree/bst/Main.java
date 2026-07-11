@@ -1,45 +1,24 @@
 public class Main {
 
     public static void main(String[] args) {
-        BST bst = new BST();
+        TreeBinary tree = new TreeBinary();
+        tree.add(10);
+        tree.add(5);
+        tree.add(15); 
+        tree.add(3);
+        tree.add(7);  
 
-        bst.add(10);
-        bst.add(5);
-        bst.add(15);
-        bst.add(3);
-        bst.add(7);
-        bst.add(12);
-        bst.add(18);
+        System.out.println("Minimum value in the tree: " + tree.min().value);
+        System.out.println("Maximum value in the tree: " + tree.max().value);
 
-        System.out.println("BST created successfully!");
+        System.out.println("Is the tree empty? " + tree.isEmpty());
+        System.out.println(tree.search(7) != null ? "Value 7 found in the tree." : "Value 7 not found in the tree.");
+        System.out.println(tree.search(20) != null ? "Value 20 found in the tree." : "Value 20 not found in the tree.");
+        System.out.println(tree.search(5) != null ? "Value 5 found in the tree." : "Value 5 not found in the tree.");
+        System.out.println(tree.search(15) != null ? "Value 15 found in the tree." : "Value 15 not found in the tree.");
+        System.out.println(tree.search(10) != null ? "Value 10 found in the tree." : "Value 10 not found in the tree.");
 
-
-        bst.recursiveAdd(20);
-        bst.recursiveAdd(2);
-        bst.recursiveAdd(8);
-        bst.recursiveAdd(13);
-        bst.search(0);
-        bst.search(10);
-        System.out.println(bst.search(10) != null ? "Value 10 found in BST." : "Value 10 not found in BST.");
-        System.out.println(bst.search(20) != null ? "Value 20 found in BST." : "Value 20 not found in BST.");
-        System.out.println(bst.search(5) != null ? "Value 5 found in BST." : "Value 5 not found in BST.");
-    
-        System.out.println("BST operations completed successfully!");
         
-        System.out.println("Height of the BST: " + bst.altura());
-
-
-        System.out.println("Maximum value in the BST: " + (bst.max() != null ? bst.max().value : "BST is empty."));
-
-        System.out.println("Minimum value in the BST: " + (bst.mim() != null ? bst.mim().value : "BST is empty."));
-
-        System.out.println("Size of the BST: " + bst.size());
-
-        System.out.println("Pre-order traversal of the BST:");
-        bst.preOrder();
     }
-
-
-    
 
 }
